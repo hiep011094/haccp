@@ -439,7 +439,7 @@ body {
 }
 .c-listpost_item .img{
     width: 100%;
-    margin-bottom: -3px;
+    margin-bottom: -2px;
 }
 .c-listpost_item .img img{
     width: 100%;
@@ -484,7 +484,7 @@ body {
 }
 .c-listpost02_item{
     width: 307px;
-    border: 2px solid #e2e0df;
+    border: 1px solid #e2e0df;
     padding: 14px 12px 14px 13px;
     margin: 0 14px;
     position: relative;
@@ -699,7 +699,8 @@ header{
 }   
 .box01_content_item{
     width: 306px;
-    border: 3px solid #00ABBF;
+    border: 2px solid #00abbf;
+    box-shadow: 0 0 1px #00abbf;
     position: relative;
 }
 .box01_content_item:not(:nth-child(3))::after{
@@ -728,7 +729,7 @@ header{
     padding-left: 106px;
     top: -102px;
     position: absolute;
-    left: -3px;
+    left: -2px;
 }
 .box01_content_item h3.title::after{
     content: "";
@@ -745,7 +746,7 @@ header{
     background: linear-gradient(#b2e6ec,#b2e6ec) no-repeat bottom;
     background-size: 100% 14px;
     padding: 0 5px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 .box01_content_item dl{
     background: #00ABBF;
@@ -772,7 +773,7 @@ header{
     font-size: 20px;
     font-family: 'NotoSansCJKjp-Bold';
     color: #fff;
-    margin-top: -3px;
+    margin-top: -2px;
 }
 .box01_content_item ul{
     padding: 12px;
@@ -839,6 +840,27 @@ header{
     justify-content: center;
     align-items: center;
     margin-bottom:23px;
+    position: relative;
+}
+.box02_inner ul::before{
+    content: "";
+    width: 66px;
+    height: 66px;
+    background: url(../images/index_img13.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 94px;
+    top: 9px;
+}
+.box02_inner ul::after{
+    content: "";
+    width: 92px;
+    height: 66px;
+    background: url(../images/index_img14.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;  
+    right: 74px;
+    bottom: -5px;
 }
 .box02_inner li{
     height: 190px;
@@ -1113,8 +1135,8 @@ header{
     font-size: 20px;
     font-family: "NotoSansCJKjp-Bold";
     text-align: center;
-    border-top: 2px solid #3E3428;
-    border-bottom: 2px solid #3E3428;
+    border-top: 1px solid #3E3428;
+    border-bottom: 1px solid #3E3428;
     line-height: 1.5;
     padding: 10px 0;
     margin-bottom: 15px;
@@ -1180,7 +1202,7 @@ header{
     margin-bottom: 26px;
 }
 .box06 .c-title02 h3{
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 .box06_inner{
     width: 810px;
@@ -1297,7 +1319,8 @@ header{
     padding-right: 25px;
 }
 .footer_inner li{
-    line-height: 1.75;
+    line-height: 1.7;
+    padding: 4px 0 4px 0;
 }
 .footer_inner li a{
     color: #fff;
@@ -1354,8 +1377,8 @@ header{
 .column_box01 h2{
     font-size: 26px;
     font-family: "NotoSansCJKjp-Bold";
-    border-top: 2px solid #3E3428;
-    border-bottom: 2px solid #3E3428;
+    border-top: 1px solid #3E3428;
+    border-bottom: 1px solid #3E3428;
     padding: 10px 0;
     line-height: 1.24;
     margin-bottom: 12px;
@@ -1447,7 +1470,7 @@ header{
 }
 .column_title{
     font-size: 21px;
-    font-family: "NotoSansCJKjp-Bold";
+    font-family: "NotoSansCJKjp-Medium";
     line-height: 1.5;
     color: #fff;
     background: #00ABBF;
@@ -1538,7 +1561,7 @@ header{
     width: 1px;
     height: calc(100% + 4px);
     transform: rotate(-19deg);
-    left: 3px;
+    left: 2px;
     top: 1px;
     position: absolute;
 }
@@ -1862,6 +1885,7 @@ header{
 
 .column_content2{
     margin-bottom: 40px;
+    width: 100%;
 }
 .column_content2 .c-list{
     margin-bottom: 18px;
@@ -1877,10 +1901,10 @@ header{
 }
 .c-list li{
     margin: 13px;
+    width: 33.33%;
 }
 .c-list li a{
     transition: 0.5s;
-    display: block;
 }
 .c-list li a:hover{
     transform: translateY(-5px);
@@ -1896,7 +1920,7 @@ font-family: 'NotoSansCJKjp-Bold';
 /*IE*/
 @media screen\0 {
     #gnavi ul li:nth-child(3) span, #gnavi ul li:nth-child(4) span{
-        padding: 3px 16px 6px 16px;
+        padding: 2px 16px 6px 16px;
     }
     .box01_content_item dl{
         padding: 11px 0 14px 0;
@@ -1908,10 +1932,10 @@ font-family: 'NotoSansCJKjp-Bold';
         padding: 12px 13px 15px 13px;
     }
     .box03_list_bt dd .c-btn02 a{
-        padding: 11px 71px 14px 70px;
+        padding: 6px 71px 9px 70px;
     }
     .c-listpost_item .c-btn02 a{
-        padding: 3px 45px 6px 45px;
+        padding: 2px 45px 6px 45px;
     }
     .box05_content li{
         padding: 8px 8px 10px 36px;
