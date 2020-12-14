@@ -375,15 +375,16 @@ header {
 	z-index: 10;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
-.header_top{
-	justify-content: space-between;
-	padding: 0;
+.header_top {
+    justify-content: space-between;
+    padding: 0;
+    height: 100%;
 }
 .header_top .logo {
     width: 240px;
     margin: 0 0 6px 0;
 }
-.header_top > p{
+.header_top > h1{
 	text-align: left;
 }
 .header_top .c-btn01{
@@ -693,21 +694,24 @@ header {
 .box06_content dd p {
     margin-bottom: 15px;
 }
-.c-banner02 {
+.related_article >a{
 	padding: 10px;
     flex-wrap: wrap;
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 25px;
 }
-.c-banner02 p {
+.related_article .inbox span {
     width: 100%;
     margin-bottom: 8px;
 }
-.c-banner02 img {
+.related_article .thum {
+    margin-bottom: 10px;
+}
+.related_article .thum img {
     width: 100%;
 }
-.c-banner02 > div {
+.related_article .inbox {
     width: 100%;
     padding-left: 0;
 }
@@ -839,7 +843,7 @@ header {
 .column_content1 {
 	width: 100%;
 }
-.column_box01 h2 {
+.column_box01 h1 {
     font-size: 22px;
     padding: 6px 0 8px 0;
     margin-bottom: 10px;
@@ -859,12 +863,12 @@ header {
 .c-bg01::before,.c-bg01 p::before{
 	display: none;
 }
-.c-bg02 {
+#toc_container {
     padding: 15px 18px;
 	margin-bottom: 20px;
 	position: relative;
 }
-.c-bg02::before {
+#toc_container::before {
 	content: "";
     background: url(../images/column_img_sp.svg) no-repeat center;
     background-size: contain;
@@ -873,6 +877,9 @@ header {
     position: absolute;
     right: 10px;
     top: -32px;
+}
+.c-bg03 .ttl{
+	font-size: 18px;
 }
 .column_title {
     font-size: 18px;
@@ -886,7 +893,7 @@ header {
 	padding: 15px;
 	margin-bottom: 13px;
 }
-.column_box03 h4 {
+.column_box03 h3 {
     font-size: 16px;
     padding: 3px 0 5px 0;
     margin-top: 30px;
@@ -926,8 +933,8 @@ header {
 .column_box04 {
     margin-bottom: 35px;
 }
-.column_box05 h3 {
-    font-size: 24px;
+.column_box05 > .ttl {
+    font-size: 20px;
     margin-bottom: 14px;
     letter-spacing: 0;
 }
@@ -972,7 +979,7 @@ header {
 	.header_top .logo {
 		width: 230px;
 	}
-	.header_top > p {
+	.header_top > h1 {
 		font-size: 9px;
 	}
 	.c-slider01 {

@@ -1,9 +1,10 @@
 $(document).ready(function(){
 	$(window).bind(('load'),function(){
+		
 		//...................slider.......................
 		$('.c-slider01').slick({
 			slidesToShow: 3,
-			slidesToScroll: 1,
+			slidesToScroll: 3,
 			autoplay: true,
 			arrows:true,
 			dots: false,
@@ -16,6 +17,9 @@ $(document).ready(function(){
 				  }
 				}
 			  ]
+		});
+		AOS.init({
+			once: true
 		});
 		
 	});
