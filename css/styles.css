@@ -396,14 +396,15 @@ body {
 .c-listpost_item{
     width: 308px;
 }
-.c-listpost_item h4{
+.c-listpost_item .ttl{
     font-size: 20px;
     font-weight: 700;
     padding-left: 26px;
     position: relative;
-    margin-bottom: 13px;
+    margin-bottom: 7px;
+    line-height: 1.4;
 }
-.c-listpost_item h4::before{
+.c-listpost_item .ttl::before{
     content: "";
     background: url(../images/icon14.svg) no-repeat center;
     background-size: contain;
@@ -411,9 +412,9 @@ body {
     height: 18px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4px;
 }
-.c-listpost_item h4 span{
+.c-listpost_item .ttl span{
     color: #E45B58;
 }
 .c-listpost_item dd{
@@ -555,6 +556,7 @@ header{
     align-items: center;
     padding: 14px;
     position: relative;
+    min-height: 89px;
 }
 .header_top .c-btn01{
     position: absolute;
@@ -564,7 +566,7 @@ header{
 }
 .header_top .logo{
     width: 290px;
-    margin: 1px 0 10px -5px;
+    margin: 1px 0 0 -5px;
 }
 .header_top > h1{
     font-size: 11px;
@@ -573,21 +575,22 @@ header{
     text-align: center;
     color: #787168;
     margin-bottom: 0;
+    margin-top: 10px;
 }
-#gnavi{
+.c-gnavi{
     background: #00ABBF;
     padding: 0 12px;
 }
-#gnavi ul{
+.c-gnavi ul{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 9px 0 13px 52px;
 }
-#gnavi ul li{
+.c-gnavi ul li{
     margin-right: 30px;
 }
-#gnavi li > a{
+.c-gnavi li > a{
     color: #fff;
     font-weight: 500;
     font-size: 16px;
@@ -597,36 +600,36 @@ header{
     line-height: 1.25;
     transition: 0.5s;
 }
-#gnavi a:hover{
+.c-gnavi a:hover{
     opacity: 0.8;
 }
-#gnavi li > a span{
+.c-gnavi li > a span{
     display: inline-block;
     position: absolute;
     left: 0;
     top: 60%;
     transform: translateY(-50%);
 }
-#gnavi ul li:nth-child(1) span{
+.c-gnavi ul li:nth-child(1) span{
     width: 34px;
 }
-#gnavi ul li:nth-child(2) span{
+.c-gnavi ul li:nth-child(2) span{
     width: 33px;
 }
-#gnavi ul li:nth-child(1) a,#gnavi ul li:nth-child(2) a{
+.c-gnavi ul li:nth-child(1) a,.c-gnavi ul li:nth-child(2) a{
     padding-left: 40px;
 }
-#gnavi ul li:nth-child(3) a,#gnavi ul li:nth-child(4) a{
+.c-gnavi ul li:nth-child(3) a,.c-gnavi ul li:nth-child(4) a{
     padding-left: 110px;
 }
-#gnavi ul li:nth-child(3) span,#gnavi ul li:nth-child(4) span{
+.c-gnavi ul li:nth-child(3) span,.c-gnavi ul li:nth-child(4) span{
     background: #F4E75E;
     color: #00ABBF;
     font-size: 14px;
     line-height: 1.2;
     padding: 4px 16px;
 }
-#gnavi ul li:nth-child(3) span:after,#gnavi ul li:nth-child(4) span:after{
+.c-gnavi ul li:nth-child(3) span:after,.c-gnavi ul li:nth-child(4) span:after{
     content: "";
     width: 0;
     height: 0;
@@ -638,10 +641,10 @@ header{
     transform: translateY(-50%);
     position: absolute;
 }
-#gnavi ul li:nth-child(3){
+.c-gnavi ul li:nth-child(3){
     margin-right: 25px;
 }
-#gnavi ul li:nth-child(4){
+.c-gnavi ul li:nth-child(4){
     margin-right: 0;
 }
 /******************mainvisual*********************/
@@ -963,6 +966,7 @@ header{
 }
 .box03 .txt{
     text-align: center;
+    margin-bottom: 20px;
 }
 .box03 .container{
     padding: 0 60px;
@@ -980,24 +984,39 @@ header{
 }
 .box03_list_top{
     width: 100%;
-    background: url(../images/bg02.svg) no-repeat center;
+    border: 2px solid #00ABBF;
+    /* background: url(../images/bg02.svg) no-repeat center; */
     background-size: contain;
-    min-height: 310px;
+    min-height: 258px;
     position: relative;
     z-index: 2;
 }
+.box03_list_top::after{
+	content: "";
+    width: 120px;
+    height: 57px;
+    background: url(../images/icon_pc01.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    bottom: -56px;
+    transform: translateX(-50%);
+}
+
 .box03_list_top dt{
     background: #00ABBF;
 }
-.box03_list_top h3{
+.box03_list_top .ttl{
     font-size: 22px;
     font-weight: 700;
     color: #fff;
     text-align: center;
-    padding: 13px;
+    padding: 8px 8px 12px 8px;
+    margin-bottom: 0;
+    line-height: 1.4;
 }
 .box03_list_top ul {
-    padding: 13px 25px 13px 30px;
+    padding: 10px 25px 8px 30px;
 }
 .box03_list_top li{
     padding: 6px 8px 6px 20px;
@@ -1018,8 +1037,8 @@ header{
 .box03_list_bt{
     width: 466px;
     background: #D9F2F5;
-    padding: 30px 30px 13px 20px;
-    margin-top: -20px;
+    padding: 27px 30px 13px 20px;
+    margin-top: 32px;
     z-index: 1;
     position: relative;
 }
@@ -1027,17 +1046,19 @@ header{
     display: flex;
     justify-content: center;
     border-bottom:2px dotted #00ABBF;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     margin-bottom: 8px;
 }
-.box03_list_bt h3{
+.box03_list_bt .ttl{
     font-size: 22px;
     font-weight: 700;
-    padding-left: 28px;
+    padding: 0px 0 0px 28px;
     position: relative;
     display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.4;
 }
-.box03_list_bt h3::before{
+.box03_list_bt .ttl::before{
     content: "";
     background: url(../images/icon12.svg) no-repeat center;
     background-size: contain;
@@ -1130,7 +1151,7 @@ header{
     margin-bottom: 30px;
 }
 .c-list01 .container{
-    padding:20px 60px;
+    padding:22px 60px 20px 60px;
 }
 .c-list01 .title02{
     font-size: 20px;
@@ -1140,7 +1161,7 @@ header{
     border-bottom: 1px solid #3E3428;
     line-height: 1.5;
     padding: 11px 0;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 .c-list01 .title02 span{
     color: #00ABBF;
@@ -1313,7 +1334,7 @@ header{
     padding: 15px 5px 16px 0px;
     margin: 0 auto;
 }
-#footer #gnavi{
+#footer .c-gnavi{
     border-top: 2px dotted #7fd5df;
     border-bottom: 2px dotted #7fd5df;
     margin-bottom: 10px;
@@ -1468,7 +1489,7 @@ header{
     padding: 2px 0 2px 0;
     display: inline-block;
 }
-#toc_container li:first-child{
+#toc_container .toc_list:first-child li:first-child{
     font-weight: 500;
 }
 #toc_container li:nth-child(2){
@@ -1925,7 +1946,7 @@ font-family: 'Noto Sans JP', sans-serif;
 **/
 /*IE*/
 @media screen\0 {
-    #gnavi ul li:nth-child(3) span, #gnavi ul li:nth-child(4) span{
+    .c-gnavi ul li:nth-child(3) span, .c-gnavi ul li:nth-child(4) span{
         padding: 2px 16px 6px 16px;
     }
     .box01_content_item dl{
