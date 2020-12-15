@@ -357,7 +357,7 @@ body {
 }
 
 .c-listpost02 {
-    padding: 20px 3% 16px 3%;
+    padding: 20px 3% 12vw 3%;
 }
 .c-listpost02_item {
     width: 100%;
@@ -452,6 +452,9 @@ header {
 	width: 100%;
 	margin:0;
 	margin-bottom: 30px;
+}
+.box01_content_item li{
+	line-height: 1.6;
 }
 .box01_content_item h3.title {
     font-size: 22px;
@@ -598,11 +601,12 @@ header {
     font-size: 20px;
 }
 .box03_list_top ul {
-    padding: 13px 20px 13px 20px;
+    padding: 13px 5px 13px 20px;
 }
 .box03_list_top li {
 	font-size: 13px;
-	padding: 8px 20px 8px 20px;
+	line-height: 1.6;
+	padding: 4px 0px 5px 20px;
 }
 .box03_list_top li::before{
 	top: 2px;
@@ -701,7 +705,7 @@ header {
 .related_article >a{
 	padding: 10px;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 310px;
     margin: 0 auto;
     margin-bottom: 25px;
 }
@@ -729,6 +733,21 @@ header {
     padding: 36px 0 35px;
     background: #F9F9F9;
 }
+.box07 .c-btn02{
+	padding: 0 calc(3% + 14px);
+	position: relative;
+	margin-top: 6vw;
+}
+.box07 .c-btn02::before {
+    content: "";
+    width: 106%;
+    height: 14vw;
+    background: url(../images/line_footer.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: -3%;
+    top: -20vw;
+}
 .box07 h3 {
     font-size: 22px;
     letter-spacing: 3px;
@@ -753,7 +772,7 @@ header {
     border-bottom: none;
 }
 #footer .c-gnavi li > a {
-    padding: 10px;
+    padding: 20px 20px 20px 10px;
 }
 #footer .c-gnavi ul li:nth-child(1) a, #footer .c-gnavi ul li:nth-child(2) a {
     padding-left: 60px;
@@ -897,6 +916,9 @@ header {
 	padding: 15px;
 	margin-bottom: 13px;
 }
+.column_box03_bg blockquote{
+	line-height: 1.8;
+}
 .column_box03 h3 {
     font-size: 16px;
     padding: 3px 0 5px 0;
@@ -930,6 +952,9 @@ header {
 .under-tbl td:first-child{
 	background: #F5F5F4;
 }
+.under-tbl td:not(:first-child),.under-tbl td{
+	padding: 6px 10px;
+}
 .under-tbl + p {
     font-size: 15px;
     margin-bottom: 35px;
@@ -946,14 +971,20 @@ header {
 	width: 400px;
 	margin: 0 auto;
 }
+.c-sidebar .c-btn03 {
+    max-width: 310px;
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+}
 .list_br,.c-sidebar_box01,.c-sidebar_box02,.c-sidebar_btn{
 	display: none;
 }
 .c-list ul {
-	flex-wrap: wrap;
-	max-width: 400px;
-	margin: 0 auto;
-	width: 100%;
+    flex-wrap: wrap;
+    max-width: 310px;
+    margin: 0 auto;
+    width: 100%;
 }
 .c-list ul li{
 	width: 100%;
@@ -1064,11 +1095,12 @@ header {
 		font-size: 11px;
 		padding: 2px 13px 2px 13px;
 	}
-	.box03_list_top li {
-		font-size: 13px;
-		padding: 4px 20px 5px 20px;
-	}
 	.box03_list_bt dd p:not(.c-btn02) {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 330px) {
+	.c-gnavi li > a {
 		font-size: 13px;
 	}
 }
