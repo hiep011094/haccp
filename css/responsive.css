@@ -34,7 +34,7 @@ body {
 #totop {
     position: fixed;
     bottom: 60px;
-    right: 3%;
+    right: 20px;
     z-index: 9;
 }
 #totop a {
@@ -97,7 +97,7 @@ body {
 	background-size: contain;
 	width: 8px;
     height: 12px;
-	right: 3%;
+	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
 	position: absolute;
@@ -256,13 +256,14 @@ body {
 }
 /**************mainvisual*************************/
 .mainvisual{
-	margin-top: 70px;
+	margin-top: 60px;
 	padding:30px 0;
 }
 .mainvisual_item{
 	display: flex;
 	justify-content: center;
-    margin-bottom: 30px;
+	margin-bottom: 20px;
+	padding:0 20px;
 }
 /**************component*************************/
 .c-slider01 {
@@ -370,7 +371,7 @@ body {
 }
 
 .c-listpost02 {
-    padding: 20px 3% 12vw 3%;
+    padding: 20px 20px 12vw 20px;
 }
 .c-listpost02_item {
 	width: 100%;
@@ -426,7 +427,7 @@ header {
 	display: inline-block;
     left: 50%;
 	transform: translateX(-50%);
-	padding: 0 3%;
+	padding: 0 20px;
 }
 .box01 .c-title .ttl02::after{
 	right: -1px;
@@ -436,6 +437,7 @@ header {
 }
 .box01 .c-title .ttl02{
 	margin-left: 0;
+	padding: 6px 18px 7px 20px;
 }
 .c-title .ttl02 span::before {
     width: 18px;
@@ -459,26 +461,26 @@ header {
 	content: "";
     background: url(../images/index_img10.svg) no-repeat center;
     background-size: contain;
-    width: 38px;
-    height: 40px;
+    width: 32px;
+    height: 36px;
     position: absolute;
-    left: 0;
-    top: 0px;
+    left: 15px;
+    top: 10px;
 }
 .box01 .c-title::after {
-    content: "";
+	content: "";
     background: url(../images/index_img11.svg) no-repeat center;
     background-size: contain;
-    width: 68px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
     position: absolute;
-    top: -5px;
-    right: -12px;
+    top: 5px;
+    right: 15px;
 }
 .box01 .txt {
     text-align: left;
     margin-bottom: 15px;
-    padding: 0 3%;
+    padding: 0 20px;
 }
 .box01 .txt::before {
     display: none;
@@ -487,7 +489,7 @@ header {
     display: none;
 }
 .box01_content {
-    padding: 0 3%;
+    padding: 0 20px;
 }
 .box01_content_item {
 	width: 100%;
@@ -528,11 +530,12 @@ header {
 }
 
 .box02 .container {
-    padding: 0 3%;
+    padding: 0 20px;
 }
 .box02 .c-title {
 	margin-bottom: 20px;
 	position: relative;
+	z-index: 1;
 }
 .box02 .c-title > p::after {
     border-top: 34px solid transparent;
@@ -549,8 +552,9 @@ header {
     background: url(../images/index_img13.svg) no-repeat center;
     background-size: contain;
     position: absolute;
-    left: 3%;
-    top: -7px;
+    left: -5px;
+	top: -7px;
+	z-index: -1;
 }
 .box02 .c-title::after{
     content: "";
@@ -559,8 +563,9 @@ header {
     background: url(../images/index_img14.svg) no-repeat center;
     background-size: contain;
     position: absolute;  
-    right: 3%;
-    top: -7px;
+    right: -5px;
+	top: -7px;
+	z-index: -1;
 }
 .box02 .c-title .ttl02{
 	max-width: 352px;
@@ -597,7 +602,7 @@ header {
     padding: 42px 0 10px 0;
 }
 .box03 .container {
-    padding: 0 3%;
+    padding: 0 20px;
 }
 .box03 .c-title h2 {
     font-size: 24px;
@@ -610,6 +615,9 @@ header {
     font-size: 15px;
     line-height: 1.8;
     margin-top: -5px;
+}
+.box03 .txt01 span {
+    padding: 4px 17px;
 }
 .box03 .txt {
     text-align: left;
@@ -672,7 +680,7 @@ header {
 }
 
 .c-banner .container {
-    padding: 0 3%;
+    padding: 0 20px;
 }
 .c-banner_inner {
 	flex-wrap: wrap;
@@ -688,7 +696,7 @@ header {
 }
 .c-banner_inner .img {
     width: 65px;
-    left: -3%;
+    left: -20px;
     top: -17px;
 }
 .c-banner_inner ul {
@@ -713,7 +721,7 @@ header {
 }
 
 .c-list01 .container {
-    padding: 42px 3% 0px 3%;
+    padding: 42px 20px 0px 20px;
 }
 .c-list01 .title02 {
     font-size: 18px;
@@ -726,7 +734,7 @@ header {
 }
 .box05_inner {
     width: 100%;
-    padding: 28px 3% 32px 3%;
+    padding: 28px 20px 32px 20px;
 }
 .box05_inner::after{
 	display: none;
@@ -742,7 +750,7 @@ header {
 .box06_inner {
     width: 100%;
     background: transparent;
-    padding: 0 3%;
+    padding: 0 20px;
 }
 .box06 .c-title02 {
     margin-left: 0;
@@ -792,7 +800,7 @@ header {
     background: #F9F9F9;
 }
 .box07 .c-btn02{
-	padding: 0 calc(3% + 14px);
+	padding: 0 calc(20px + 14px);
 	position: relative;
 	margin-top: 6vw;
 }
@@ -803,7 +811,7 @@ header {
     background: url(../images/line_footer.png) no-repeat center;
     background-size: contain;
     position: absolute;
-    left: -3%;
+    left: -20px;
     top: -20vw;
 }
 .box07 h3 {
@@ -877,7 +885,7 @@ header {
 }
 .footer_inner {
     display: flex;
-    padding: 0 3%;
+    padding: 0 20px;
     flex-wrap: wrap;
 }
 .footer_inner ul{
@@ -900,12 +908,12 @@ header {
     background: url(../images/line_footer.png) no-repeat center;
     background-size: contain;
     position: absolute;
-    left: -3%;
+    left: -20px;
     bottom: -14vw;
 }
 .footer_inner li a {
     font-size: 13px;
-    padding: 5px 13px 5px 13px;
+    padding: 5px 0 5px 13px;
 }
 .totop {
     right: auto;
@@ -919,7 +927,7 @@ header {
 /*************************************column************************************/
 .column_inner{
 	margin-top: 70px;
-	padding: 30px 3%;
+	padding: 30px 20px;
 	width: 100%;
 }
 .column_inner .c-listpost_item .c-btn02 a {
@@ -929,7 +937,7 @@ header {
 	width: 100%;
 }
 .column_box01 h1 {
-    font-size: 22px;
+    font-size: 20px;
     padding: 6px 0 8px 0;
     margin-bottom: 10px;
 }
@@ -967,7 +975,7 @@ header {
 	font-size: 18px;
 }
 .column_title {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
     padding: 5px 15px 5px 15px;
 }
@@ -982,7 +990,7 @@ header {
 	line-height: 1.8;
 }
 .column_box03 h3 {
-    font-size: 16px;
+    font-size: 19px;
     padding: 3px 0 5px 0;
     margin-top: 30px;
 }
@@ -1025,7 +1033,7 @@ header {
     margin-bottom: 35px;
 }
 .column_box05 > .ttl {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 14px;
     letter-spacing: 0;
 }
@@ -1078,7 +1086,7 @@ header {
 }
 @media screen and (max-width: 500px) {
 	header {
-		padding: 12px 10px 10px 3%;
+		padding: 12px 80px 10px 20px;
 	}
 	.header_top .logo {
 		width: 230px;
@@ -1116,10 +1124,6 @@ header {
 	.box01 .c-title > p {
 		padding: 5px 10px 6px 10px;
 	}
-	.box01 .c-title::after {
-		top: -23px;
-		right: 0;
-	}
 	.box01_content_item h3.title::after {
 		width: 64px;
 		height: 92px;
@@ -1139,9 +1143,6 @@ header {
 	.box03 .txt01 {
 		font-size: 14px;
 	}
-	.box03 .txt01 span {
-		padding: 4px 17px;
-	}
 	.box03 .txt span {
 		background: linear-gradient(#f7ee8e,#f7ee8e) no-repeat bottom;
 		background-size: 96.5% 8px;
@@ -1160,7 +1161,7 @@ header {
 	}
 	.footer_inner li a {
 		font-size: 11px;
-		padding: 2px 13px 2px 13px;
+		padding: 2px 0 2px 13px;
 	}
 	.box03_list_bt dd p:not(.c-btn02) {
 		font-size: 13px;
@@ -1174,6 +1175,26 @@ header {
 	.box01 .c-title > p::before {
 		border-top: 34px solid transparent;
 		border-bottom: 34px solid transparent;
+	}
+	.c-btn02 a,.box03_list_bt dd .c-btn02 a,.c-listpost_item .c-btn02 a,.column_inner .c-listpost_item .c-btn02 a {
+		font-size: 15px;
+		padding: 6px 25px 8px 25px;
+		min-width: 240px;
+	}
+	.box02 .c-btn02 a{
+		min-width: 280px;
+	}
+	.c-title .ttl02 {
+		padding: 6px 25px 7px 20px;
+	}
+	.box03 .txt01 span {
+		margin: 0;
+	}
+	.box03 .c-title .ttl01 {
+		padding: 5px 0 6px 0;
+	}
+	.box07 .c-btn02 {
+		padding: 0 20px;
 	}
 }
 @media screen and (max-width: 330px) {
