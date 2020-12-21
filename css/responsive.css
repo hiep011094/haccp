@@ -35,7 +35,7 @@ body {
     position: fixed;
     bottom: 60px;
     right: 3%;
-    z-index: 1000;
+    z-index: 9;
 }
 #totop a {
     width: 40px;
@@ -173,7 +173,8 @@ body {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    display: block;
+	display: block;
+	z-index: 10;
 }
 .menu-icon span {
 	display: block;
@@ -286,11 +287,11 @@ body {
     background-position: -63px -40px;
     background-size: 180px 180px;
 }
-.c-slider01__item .txt h4 {
+.c-slider01__item .txt .ttl {
 	font-size: 16px;
 	margin-bottom: 5px;
 }
-.c-slider01__item .txt p {
+.c-slider01__item .txt p:not(.ttl) {
     font-size: 13px;
 }
 .c-title h2 {
@@ -315,7 +316,8 @@ body {
 
 .c-btn02 a {
     font-size: 16px;
-    padding: 6px 40px 8px 40px;
+	padding: 8px 45px 10px 45px;
+	min-width: 285px;
 }
 
 .c-listpost_item {
@@ -331,7 +333,7 @@ body {
     height: 15px;
 }
 .c-listpost_item dd {
-    padding: 15px 14px 6px 14px;
+    padding: 20px 20px 6px 20px;
 }
 .c-listpost_item .img {
     margin-bottom: 2px;
@@ -339,18 +341,29 @@ body {
 .c-listpost_item .txt {
     margin-bottom: 10px;
 }
-.c-listpost_item h5 {
+.c-listpost_item .ttl01 {
     font-size: 18px;
     margin-bottom: 14px;
 }
-
-.c-title02 h3 {
+.c-listpost_item .c-btn02 a{
+	max-width: 285px;
+	margin: 0 auto;
+	font-size: 16px;
+    padding: 8px 45px 10px 45px;
+}
+.c-listpost_item .number::before {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+}
+.c-title02 .ttl {
     font-size: 36px;
     letter-spacing: 0px;
     margin-bottom: 0px;
 }
 .c-title02 span {
-    font-size: 18px;
+	font-size: 18px;
+	line-height: 1.3;
 }
 .c-title02 {
     margin-bottom: 15px;
@@ -360,11 +373,15 @@ body {
     padding: 20px 3% 12vw 3%;
 }
 .c-listpost02_item {
-    width: 100%;
+	width: 100%;
+    max-width: 310px;
+    display: block;
+    margin: 14px auto;
 }
 .c-listpost02_item .img img {
     width: 100%;
 }
+
 /**********************main******************************/
 header {	
 	height: 70px;
@@ -408,7 +425,31 @@ header {
 	position: relative;
 	display: inline-block;
     left: 50%;
-    transform: translateX(-50%);
+	transform: translateX(-50%);
+	padding: 0 3%;
+}
+.box01 .c-title .ttl02::after{
+	right: -1px;
+}
+.box01 .c-title .ttl02::before{
+	left: -1px;
+}
+.box01 .c-title .ttl02{
+	margin-left: 0;
+}
+.c-title .ttl02 span::before {
+    width: 18px;
+}
+.c-title .ttl01{
+	font-size: 20px;
+}
+.c-title .ttl02{
+	width: 100%;
+}
+.c-title .ttl02 span{
+	font-size: 14px;
+	display: block;
+	 line-height: 1.4;
 }
 .box01 .c-title > p {
     padding: 5px 24px 6px 22px;
@@ -521,6 +562,9 @@ header {
     right: 3%;
     top: -7px;
 }
+.box02 .c-title .ttl02{
+	max-width: 352px;
+}
 .box02_inner ul::before,.box02_inner ul::after{
 	display: none;
 }
@@ -558,6 +602,10 @@ header {
 .box03 .c-title h2 {
     font-size: 24px;
 }
+.box03 .c-title .ttl01{
+	font-size: 20px;
+    padding: 5px 10px 6px 10px;
+}
 .box03 .txt01 {
     font-size: 15px;
     line-height: 1.8;
@@ -565,6 +613,10 @@ header {
 }
 .box03 .txt {
     text-align: left;
+}
+.box03 .txt span {
+	background: linear-gradient(#f7ee8e,#f7ee8e) no-repeat bottom;
+	background-size: 97% 8px;
 }
 .box03_list {
 	flex-wrap: wrap;
@@ -575,9 +627,9 @@ header {
 	width: 100%;
 }
 .box03_list_bt dd .c-btn02 a {
-	padding: 5px 71px 7px 70px;
+	padding: 8px 71px 10px 70px;
     display: block;
-    max-width: 375px;
+    max-width: 285px;
     margin: 0 auto;
 }
 .box03_list_top {
@@ -615,8 +667,8 @@ header {
 }
 .box03_list_bt {
 	width: 100%;
-	margin-top: 30px;
-	padding: 20px 20px 8px 20px;
+	margin-top: 35px;
+    padding: 20px 20px 20px 20px;
 }
 
 .c-banner .container {
@@ -631,7 +683,8 @@ header {
     margin-left: 40px;
     margin-right: 0;
     margin-bottom: 20px;
-    width: 100%;
+	width: 100%;
+	letter-spacing: -1px;
 }
 .c-banner_inner .img {
     width: 65px;
@@ -697,7 +750,11 @@ header {
 }
 .box06_content dt {
     font-size: 18px;
-    padding: 7px 10px 6px 10px;
+	padding: 7px 10px 6px 10px;
+	display: flex;
+}
+.box06_content dt > span{
+	flex-shrink: 0;
 }
 .box06_content dd p {
     margin-bottom: 15px;
@@ -724,9 +781,10 @@ header {
     padding-left: 0;
 }
 .box06_content .c-btn02 a {
-	max-width: 400px;
-	display: block;
-	margin: 0 auto;
+	max-width: 310px;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 40px 10px 40px;
 }
 
 .box07 {
@@ -754,9 +812,10 @@ header {
     margin-bottom: 5px;
 }
 .box07 .c-btn02 a {
-    max-width: 400px;
+	max-width: 310px;
     margin: 0 auto;
     display: block;
+    padding: 8px 45px 10px 45px;
 }
 
 
@@ -863,6 +922,9 @@ header {
 	padding: 30px 3%;
 	width: 100%;
 }
+.column_inner .c-listpost_item .c-btn02 a {
+    padding: 10px 45px 11px 45px;
+}
 .column_content1 {
 	width: 100%;
 }
@@ -913,7 +975,7 @@ header {
     margin-bottom: 12px;
 }
 .column_box03_bg {
-	padding: 15px;
+	padding: 15px 25px;
 	margin-bottom: 13px;
 }
 .column_box03_bg blockquote{
@@ -935,11 +997,11 @@ header {
 }
 .column_img01 .img {
 	width: 100%;
-    padding: 0 3%;
+    padding: 0 5%;
 }
 .column_img01 > span {
     font-size: 10px;
-    padding: 0 3%;
+    padding: 0 5%;
 }
 .tbl-block  tr > th,.tbl-block tr > td,.under-tbl td:first-child {
 	width:100%;
@@ -971,11 +1033,18 @@ header {
 	width: 400px;
 	margin: 0 auto;
 }
+.c-sidebar .logo{
+	width: 230px;
+}
 .c-sidebar .c-btn03 {
     max-width: 310px;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 25px;
     text-align: center;
+}
+.c-sidebar .txt {
+	line-height: 1.6;
+    margin-bottom: 15px;
 }
 .list_br,.c-sidebar_box01,.c-sidebar_box02,.c-sidebar_btn{
 	display: none;
@@ -1066,30 +1135,28 @@ header {
 	.box03 .c-title h2 {
 		font-size: 20px;
 	}
+
 	.box03 .txt01 {
 		font-size: 14px;
 	}
 	.box03 .txt01 span {
-		padding: 0 12px;
+		padding: 4px 17px;
+	}
+	.box03 .txt span {
+		background: linear-gradient(#f7ee8e,#f7ee8e) no-repeat bottom;
+		background-size: 96.5% 8px;
+		background-position-x: 8px;
 	}
 	.c-banner_inner .img {
 		left: -17px;
 		top: -17px;
 	}
-	.c-banner_inner h2 {
-		font-size: 18px;
-		margin-left: 32px;
-		letter-spacing: -1px;
-	}
-	.box06_content dt,.c-listpost_item h5,.c-btn02 a {
+	
+	.box06_content dt,.c-listpost_item .ttl01,.c-btn02 a {
 		font-size: 16px;
 	}
 	.box03_list_top .ttl,.box03_list_bt .ttl{
 		font-size: 16px;
-	}
-	.c-listpost_item .c-btn02 a {
-		font-size: 16px;
-		padding: 3px 45px 5px 45px;
 	}
 	.footer_inner li a {
 		font-size: 11px;
@@ -1097,6 +1164,16 @@ header {
 	}
 	.box03_list_bt dd p:not(.c-btn02) {
 		font-size: 13px;
+	}
+}
+@media screen and (max-width: 364px) {
+	.box01 .c-title > p::after {
+		border-top: 34px solid transparent;
+		border-bottom: 34px solid transparent;
+	}
+	.box01 .c-title > p::before {
+		border-top: 34px solid transparent;
+		border-bottom: 34px solid transparent;
 	}
 }
 @media screen and (max-width: 330px) {
